@@ -7,39 +7,30 @@
     <title>K&D Serviços e Manutenções</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { 
+        /* O body mantém a imagem de ferramentas nas bordas */
+    body { 
         background-image: url('https://i.ibb.co/JRNxBBfx/ferramentas.jpg'); 
         background-size: cover; 
         background-position: center; 
         background-attachment: fixed; 
         color: #fff; font-family: sans-serif; margin: 0; 
     }
-    .container-wrapper { background: rgba(13, 13, 13, 0.9); min-height: 100vh; padding-bottom: 20px; }
-    
-    /* Estilo dos Blocos (O design que você queria) */
-    .category-block { 
-        background: #1e1e1e; 
-        margin: 20px; 
-        padding: 20px; 
-        border-radius: 8px; 
-        border-left: 6px solid #f1c40f; /* A borda lateral amarela */
-        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+
+    /* O container-wrapper agora permite que o fundo apareça no topo */
+    .container-wrapper { 
+        background: rgba(13, 13, 13, 0.7); /* Reduzi a opacidade de 0.9 para 0.7 */
+        min-height: 100vh; 
+        padding-bottom: 20px; 
+    }
+
+    /* O Hero fica transparente para mostrar o fundo */
+    .hero { 
+        text-align: center; 
+        padding: 60px 20px; 
+        background: rgba(0, 0, 0, 0.4); /* Fundo levemente escurecido apenas atrás dos botões */
     }
     
-    .category-header { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; }
-    .category-header h3 { color: #f1c40f; margin: 0; text-transform: uppercase; }
-    .category-icon { font-size: 24px; color: #f1c40f; }
-    
-    .category-description { font-size: 14px; color: #ccc; margin-bottom: 15px; line-height: 1.5; }
-    .image-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-    .grid-item img { width: 100%; height: 150px; object-fit: cover; border-radius: 5px; }
-    
-    /* Outros elementos */
-    .hero { text-align: center; padding: 40px 20px; background: rgba(0,0,0,0.6); }
-    .btn-social { display: block; background: #25d366; padding: 12px; margin: 10px auto; width: 220px; text-decoration: none; color: #fff; font-weight: bold; border-radius: 25px; text-align: center; }
-    .btn-insta { background: #e1306c; }
-    .footer-section { text-align: center; padding: 40px 20px; background: #050505; }
-    .footer-section a { color: #f1c40f; text-decoration: none; font-weight: bold; display: block; margin-top: 10px; }
+    /* ... mantenha o restante do seu CSS igual ... */
     </style>
 </head>
 <body>
