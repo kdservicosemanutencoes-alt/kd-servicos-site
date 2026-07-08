@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css)">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K&D Serviços e Manutenções</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         body { 
-            background-image: url('https://i.ibb.co/JRNxBBfx/ferramentas.jpg'); 
-            background-size: cover; 
-            background-position: center; 
-            background-attachment: fixed; 
-            color: #fff; font-family: sans-serif; margin: 0; 
-        }
-        .container-wrapper { background: rgba(13, 13, 13, 0.9); min-height: 100vh; padding-bottom: 20px; }
-        .hero { 
-            text-align: center; padding: 60px 20px; 
-            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.ibb.co/VWmZkFFM/banner.jpg'); 
-            background-size: cover; background-position: center; 
-        }
-        .logo { width: 150px; border-radius: 50%; border: 3px solid #f1c40f; margin-bottom: 15px; }
-        .category-block { background: #161616; margin: 20px; padding: 20px; border-radius: 10px; border: 1px solid #333; }
-        .category-description { font-size: 14px; color: #ccc; margin-bottom: 15px; }
-        .image-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
-        .grid-item img { width: 100%; height: 150px; object-fit: cover; border-radius: 5px; }
-        .btn-social { display: block; background: #25d366; padding: 15px; margin: 10px auto; width: 250px; text-decoration: none; color: #fff; font-weight: bold; border-radius: 25px; text-align: center; }
-        .btn-insta { background: #e1306c; }
-        .footer-section { text-align: center; padding: 40px 20px; background: #050505; }
-        .footer-section a { color: #f1c40f; text-decoration: none; font-weight: bold; display: block; margin-top: 10px; }
+        background-image: url('https://i.ibb.co/JRNxBBfx/ferramentas.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        background-attachment: fixed; 
+        color: #fff; font-family: sans-serif; margin: 0; 
+    }
+    .container-wrapper { background: rgba(13, 13, 13, 0.9); min-height: 100vh; padding-bottom: 20px; }
+    
+    /* Estilo dos Blocos (O design que você queria) */
+    .category-block { 
+        background: #1e1e1e; 
+        margin: 20px; 
+        padding: 20px; 
+        border-radius: 8px; 
+        border-left: 6px solid #f1c40f; /* A borda lateral amarela */
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    }
+    
+    .category-header { display: flex; align-items: center; gap: 10px; margin-bottom: 15px; }
+    .category-header h3 { color: #f1c40f; margin: 0; text-transform: uppercase; }
+    .category-icon { font-size: 24px; color: #f1c40f; }
+    
+    .category-description { font-size: 14px; color: #ccc; margin-bottom: 15px; line-height: 1.5; }
+    .image-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    .grid-item img { width: 100%; height: 150px; object-fit: cover; border-radius: 5px; }
+    
+    /* Outros elementos */
+    .hero { text-align: center; padding: 40px 20px; background: rgba(0,0,0,0.6); }
+    .btn-social { display: block; background: #25d366; padding: 12px; margin: 10px auto; width: 220px; text-decoration: none; color: #fff; font-weight: bold; border-radius: 25px; text-align: center; }
+    .btn-insta { background: #e1306c; }
+    .footer-section { text-align: center; padding: 40px 20px; background: #050505; }
+    .footer-section a { color: #f1c40f; text-decoration: none; font-weight: bold; display: block; margin-top: 10px; }
     </style>
 </head>
 <body>
@@ -41,9 +53,12 @@
 
     <main>
         <div class="category-block">
-            <h3>Serviços Elétricos</h3>
-            <p class="category-description">Desenvolvemos projetos e manutenções elétricas seguindo a norma NBR 5410, garantindo segurança total em quadros e instalações.</p>
-            <div class="image-grid">
+    <div class="category-header">
+        <i class="fas fa-bolt category-icon"></i> <!-- Ícone -->
+        <h3>Serviços Elétricos</h3>
+    </div>
+    <p class="category-description">Desenvolvemos projetos e manutenções elétricas seguindo a norma NBR 5410, garantindo segurança total em quadros e instalações.</p>
+    <div class="image-grid">
                 <div class="grid-item"><img src="https://i.ibb.co/gM6D1DYr/ele01.jpg"></div>
                 <div class="grid-item"><img src="https://i.ibb.co/Q7wdCD2h/ele02.jpg"></div>
                 <div class="grid-item"><img src="https://i.ibb.co/XxkCDgXN/ele03.jpg"></div>
@@ -54,9 +69,12 @@
         </div>
 
         <div class="category-block">
-            <h3>Ar Condicionado</h3>
-            <p class="category-description">Instalação e manutenção preventiva focada em eficiência energética e qualidade do ar para seu ambiente.</p>
-            <div class="image-grid">
+    <div class="category-header">
+        <i class="fas fa-snowflake category-icon"></i>
+        <h3>Ar Condicionado</h3>
+    </div>
+    <p class="category-description">Instalação e manutenção preventiva focada em eficiência energética e qualidade do ar para seu ambiente.</p>
+    <div class="image-grid">
                 <div class="grid-item"><img src="https://i.ibb.co/JjzRpH5Z/ar01.jpg"></div>
                 <div class="grid-item"><img src="https://i.ibb.co/7xscnqk1/ar02.jpg"></div>
                 <div class="grid-item"><img src="https://i.ibb.co/d4PvBtSs/ar03.jpg"></div>
@@ -67,9 +85,12 @@
         </div>
 
         <div class="category-block">
-            <h3>Perfis de LED</h3>
-            <p class="category-description">Iluminação moderna e personalizada. Criamos ambientes sofisticados com perfis de LED de alta qualidade e acabamento impecável.</p>
-            <div class="image-grid">
+    <div class="category-header">
+        <i class="fas fa-lightbulb category-icon"></i>
+        <h3>Perfis de LED</h3>
+    </div>
+    <p class="category-description">Iluminação moderna e personalizada. Criamos ambientes sofisticados com perfis de LED de alta qualidade e acabamento impecável.</p>
+    <div class="image-grid">
                 <div class="grid-item"><img src="https://i.ibb.co/whwtYkZf/led01.jpg"></div>
                 <div class="grid-item"><img src="https://i.ibb.co/r2s9hcqr/led02.jpg"></div>
                 <div class="grid-item"><img src="https://i.ibb.co/sdVtKkzF/led03.jpg"></div>
@@ -80,9 +101,12 @@
         </div>
 
         <div class="category-block">
-            <h3>Câmeras de Segurança</h3>
-            <p class="category-description">Sistemas de monitoramento completos. Protegemos seu patrimônio com instalação técnica de câmeras de alta definição.</p>
-            <div class="image-grid">
+    <div class="category-header">
+        <i class="fas fa-video category-icon"></i>
+        <h3>Câmeras de Segurança</h3>
+    </div>
+    <p class="category-description">Sistemas de monitoramento completos. Protegemos seu patrimônio com instalação técnica de câmeras de alta definição.</p>
+    <div class="image-grid">
                 <div class="grid-item"><img src="https://i.ibb.co/MkF8J4mT/cam01.jpg"></div>
                 <div class="grid-item"><img src="https://i.ibb.co/N2n3V3vF/cam02.jpg"></div>
                 <div class="grid-item"><img src="https://i.ibb.co/7t8dWRcs/cam03.jpg"></div>
@@ -92,9 +116,12 @@
         </div>
 
         <div class="category-block">
-            <h3>Drywall</h3>
-            <p class="category-description">Soluções em drywall para divisórias, forros e sancas. Rapidez, limpeza e um acabamento profissional para qualquer projeto.</p>
-            <div class="image-grid">
+    <div class="category-header">
+        <i class="fas fa-hammer category-icon"></i>
+        <h3>Drywall</h3>
+    </div>
+    <p class="category-description">Soluções em drywall para divisórias, forros e sancas. Rapidez, limpeza e um acabamento profissional para qualquer projeto.</p>
+    <div class="image-grid">
                 <div class="grid-item"><img src="https://i.ibb.co/WvvH3m4Z/dry02.jpg"></div>
                 <div class="grid-item"><img src="https://i.ibb.co/2GxVG0W/dry03.jpg"></div>
                 <div class="grid-item"><img src="https://i.ibb.co/r21dnY1p/dry04.jpg"></div>
@@ -104,9 +131,12 @@
         </div>
 
         <div class="category-block">
-            <h3>Instalação de Motores</h3>
-            <p class="category-description">Instalação e configuração precisa de motores para portões e sistemas automatizados, garantindo durabilidade e funcionamento suave.</p>
-            <div class="image-grid">
+    <div class="category-header">
+        <i class="fas fa-door-open category-icon"></i>
+        <h3>Instalação de Motores</h3>
+    </div>
+    <p class="category-description">Instalação e configuração precisa de motores para portões e sistemas automatizados, garantindo durabilidade e funcionamento suave.</p>
+    <div class="image-grid">
                 <div class="grid-item"><img src="https://i.ibb.co/tM47qgvZ/mot01.jpg"></div>
                 <div class="grid-item"><img src="https://i.ibb.co/Xf7Qxx3G/mot02.jpg"></div>
                 <div class="grid-item"><img src="https://i.ibb.co/wFd7DzZb/mot03.jpg"></div>
