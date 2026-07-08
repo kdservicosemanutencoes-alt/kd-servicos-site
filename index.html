@@ -7,64 +7,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         :root {
-            --bg-color: #0d0d0d;
-            --card-bg: rgba(22, 22, 22, 0.9);
-            --card-border: rgba(255, 204, 0, 0.15);
-            --text-color: #ffffff;
-            --text-muted: #aaaaaa;
-            --kd-yellow: #f1c40f;
-            --whatsapp-green: #25d366;
-            --instagram-pink: #e1306c;
+            --bg-color: #0d0d0d; --card-bg: rgba(22, 22, 22, 0.9); --kd-yellow: #f1c40f;
+            --whatsapp-green: #25d366; --instagram-pink: #e1306c;
         }
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Inter', sans-serif; color: var(--text-color); background: var(--bg-color); line-height: 1.6; }
-
-        header { background-color: #000; padding: 20px; text-align: center; }
-        .logo { font-size: 24px; font-weight: 800; }
-        .logo span { color: var(--kd-yellow); }
-
-        .hero { padding: 40px 20px; text-align: center; }
-        .hero h1 { font-size: 30px; margin-bottom: 20px; text-transform: uppercase; }
-        .hero h1 span { color: var(--kd-yellow); }
-        
-        .hero-buttons { display: flex; flex-direction: column; gap: 12px; margin-top: 20px; align-items: center; }
-        .btn-social { display: inline-flex; align-items: center; gap: 12px; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 50px; font-weight: 700; width: 250px; justify-content: center; transition: 0.3s; }
-        .btn-social:hover { opacity: 0.9; transform: translateY(-2px); }
-
+        body { font-family: 'Inter', sans-serif; color: #ffffff; background: var(--bg-color); line-height: 1.6; }
+        header { background: #000; padding: 20px; text-align: center; }
+        .hero { padding: 60px 20px; text-align: center; }
+        .btn-social { display: inline-flex; align-items: center; justify-content: center; gap: 10px; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 50px; font-weight: 700; width: 250px; margin: 5px; }
         .portfolio-section { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
-        .category-block { background-color: var(--card-bg); border-radius: 14px; padding: 30px; margin-bottom: 40px; border: 1px solid var(--card-border); }
-        .category-header { font-size: 20px; font-weight: 800; color: var(--kd-yellow); margin-bottom: 20px; border-left: 4px solid var(--kd-yellow); padding-left: 12px; }
-        
+        .category-block { background: var(--card-bg); border-radius: 14px; padding: 30px; margin-bottom: 40px; border: 1px solid rgba(255,204,0,0.15); }
+        .category-header { font-size: 20px; font-weight: 800; color: var(--kd-yellow); margin-bottom: 15px; border-left: 4px solid var(--kd-yellow); padding-left: 12px; }
+        .category-description { font-size: 14px; color: #ccc; margin-bottom: 20px; }
         .image-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
-        .grid-item { border-radius: 8px; overflow: hidden; aspect-ratio: 1 / 1; background: #151515; }
+        .grid-item { border-radius: 8px; overflow: hidden; aspect-ratio: 1/1; cursor: pointer; background: #151515; }
         .grid-item img { width: 100%; height: 100%; object-fit: cover; }
-
-        .info-footer { background: #050505; padding: 40px 20px; border-top: 1px solid #1a1a1a; text-align: center; margin-top: 40px; }
-        .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-bottom: 30px; color: var(--text-muted); }
-        .copyright { color: #555; font-size: 13px; border-top: 1px solid #1a1a1a; padding-top: 20px; }
-
+        .info-footer { background: #050505; padding: 40px 20px; text-align: center; border-top: 1px solid #1a1a1a; }
         @media (max-width: 768px) { .image-grid { grid-template-columns: repeat(2, 1fr); } }
     </style>
 </head>
 <body>
 
-    <header>
-        <div class="logo">K&D <span>SERVIÇOS</span></div>
-    </header>
+    <header><h1>K&D <span>SERVIÇOS</span></h1></header>
 
     <section class="hero">
         <h1>Excelência em <span>Instalações & Manutenções</span></h1>
-        <div class="hero-buttons">
-            <a href="https://wa.me/5515981596886" class="btn-social" style="background:var(--whatsapp-green)"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-            <a href="https://instagram.com/kelvin_melo_oficial" class="btn-social" style="background:var(--instagram-pink)"><i class="fab fa-instagram"></i> Instagram</a>
-        </div>
+        <a href="https://wa.me/5515981596886" class="btn-social" style="background:var(--whatsapp-green)"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="https://instagram.com/kelvin_melo_oficial" class="btn-social" style="background:var(--instagram-pink)"><i class="fab fa-instagram"></i> Instagram</a>
     </section>
 
     <main class="portfolio-section">
+        <div class="category-block">
+            <div class="category-header">Serviços Elétricos</div>
+            <p class="category-description">Desenvolvemos projetos e manutenções elétricas residenciais e comerciais seguindo rigorosamente as diretrizes de segurança da norma NBR 5410. Atuamos desde a montagem de quadros até o dimensionamento correto de fiação.</p>
+            <div class="image-grid">
+                <div class="grid-item"><img src="https://ibb.co/gM6D1DYr" alt="Elétrica 1"></div>
+                <div class="grid-item"><img src="https://ibb.co/Q7wdCD2h" alt="Elétrica 2"></div>
+                <div class="grid-item"><img src="https://ibb.co/XxkCDgXN" alt="Elétrica 3"></div>
+                <div class="grid-item"><img src="https://ibb.co/M3w2dGP" alt="Elétrica 4"></div>
+                <div class="grid-item"><img src="https://ibb.co/3yKnspt1" alt="Elétrica 5"></div>
+                <div class="grid-item"><img src="https://ibb.co/CrhB0fd" alt="Elétrica 6"></div>
+            </div>
+        </div>
 
-        <!-- Ar Condicionado -->
         <div class="category-block">
             <div class="category-header">Ar Condicionado</div>
+            <p class="category-description">Instalação e manutenção preventiva com foco em eficiência e qualidade do ar. Garantimos um ambiente climatizado com suporte técnico especializado.</p>
             <div class="image-grid">
                 <div class="grid-item"><img src="https://ibb.co/JjzRpH5Z" alt="Ar 1"></div>
                 <div class="grid-item"><img src="https://ibb.co/7xscnqk1" alt="Ar 2"></div>
@@ -74,41 +61,12 @@
                 <div class="grid-item"><img src="https://ibb.co/cKDZf29D" alt="Ar 6"></div>
             </div>
         </div>
-
-        <!-- Câmeras de Segurança -->
-        <div class="category-block">
-            <div class="category-header">Câmeras de Segurança</div>
-            <div class="image-grid">
-                <div class="grid-item"><img src="https://ibb.co/MkF8J4mT" alt="Câmeras 1"></div>
-                <div class="grid-item"><img src="https://ibb.co/N2n3V3vF" alt="Câmeras 2"></div>
-                <div class="grid-item"><img src="https://ibb.co/7t8dWRcs" alt="Câmeras 3"></div>
-                <div class="grid-item"><img src="https://ibb.co/Mkn3C3ZG" alt="Câmeras 4"></div>
-                <div class="grid-item"><img src="https://ibb.co/N2n3V3vF" alt="Câmeras 5"></div>
-                <div class="grid-item"><img src="https://ibb.co/qLv8Tzfx" alt="Câmeras 6"></div>
-            </div>
-        </div>
-
-        <!-- Serviços Elétricos -->
-        <div class="category-block">
-            <div class="category-header">Serviços Elétricos</div>
-            <div class="image-grid">
-                <div class="grid-item"><img src="https://ibb.co/gM6D1DYr" alt="Elétrica 1"></div>
-                <div class="grid-item"><img src="https://ibb.co/Q7wdCD2h" alt="Elétrica 2"></div>
-                <div class="grid-item"><img src="https://ibb.co/XxkCDgXN" alt="Elétrica 3"></div>
-                <div class="grid-item"><img src="https://ibb.co/M3w2dGP" alt="Elétrica 4"></div>
-                <div class="grid-item"><img src="https://ibb.co/3yKnspt1" alt="Elétrica 5"></div>
-                <div class="grid-item"><img src="https://ibb.co/CrhB0fd" alt="Elétrica 6"></div>
-
-                 </div>
-        </div>
     </main>
 
     <footer class="info-footer">
-        <div class="footer-grid">
-            <div><h3>Localização</h3><p>Atendemos Sorocaba e região</p></div>
-            <div><h3>Horário</h3><p>Segunda a Sexta: 08:00 - 17:00</p></div>
-        </div>
-        <div class="copyright">&copy; 2026 K&D Serviços e Manutenções. Todos os direitos reservados.</div>
+        <p>Localização: Sorocaba e região | Funcionamento: 09:00 - 17:00</p>
+        <p>&copy; 2026 K&D Serviços e Manutenções. Todos os direitos reservados.</p>
     </footer>
+
 </body>
 </html>
