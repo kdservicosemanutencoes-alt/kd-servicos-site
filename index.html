@@ -3,70 +3,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K&D Serviços e Manutenções | Especialistas em Instalações</title>
+    <title>K&D Serviços e Manutenções</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        :root {
-            --bg-color: #0d0d0d; --card-bg: rgba(22, 22, 22, 0.9); --kd-yellow: #f1c40f;
-            --whatsapp-green: #25d366; --instagram-pink: #e1306c;
+        body { background: #0d0d0d; color: #fff; font-family: sans-serif; margin: 0; }
+        .hero { 
+            text-align: center; padding: 60px 20px; 
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://i.ibb.co/VWmZkFFM/banner.jpg'); 
+            background-size: cover; background-position: center; 
         }
-        body { font-family: 'Inter', sans-serif; color: #ffffff; background: var(--bg-color); line-height: 1.6; }
-        header { background: #000; padding: 20px; text-align: center; }
-        .hero { padding: 60px 20px; text-align: center; }
-        .btn-social { display: inline-flex; align-items: center; justify-content: center; gap: 10px; color: #fff; text-decoration: none; padding: 12px 24px; border-radius: 50px; font-weight: 700; width: 250px; margin: 5px; }
-        .portfolio-section { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
-        .category-block { background: var(--card-bg); border-radius: 14px; padding: 30px; margin-bottom: 40px; border: 1px solid rgba(255,204,0,0.15); }
-        .category-header { font-size: 20px; font-weight: 800; color: var(--kd-yellow); margin-bottom: 15px; border-left: 4px solid var(--kd-yellow); padding-left: 12px; }
-        .category-description { font-size: 14px; color: #ccc; margin-bottom: 20px; }
-        .image-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
-        .grid-item { border-radius: 8px; overflow: hidden; aspect-ratio: 1/1; cursor: pointer; background: #151515; }
-        .grid-item img { width: 100%; height: 100%; object-fit: cover; }
-        .info-footer { background: #050505; padding: 40px 20px; text-align: center; border-top: 1px solid #1a1a1a; }
-        @media (max-width: 768px) { .image-grid { grid-template-columns: repeat(2, 1fr); } }
+        .logo { width: 150px; border-radius: 50%; border: 3px solid #f1c40f; margin-bottom: 15px; }
+        .category-block { background: #161616; margin: 20px; padding: 20px; border-radius: 10px; }
+        .category-description { font-size: 14px; color: #ccc; margin-bottom: 15px; }
+        .image-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+        .grid-item img { width: 100%; height: 150px; object-fit: cover; border-radius: 5px; }
+        .btn-social { display: block; background: #25d366; padding: 15px; margin: 10px auto; width: 250px; text-decoration: none; color: #fff; font-weight: bold; border-radius: 25px; text-align: center; }
+        .btn-insta { background: #e1306c; }
+        .footer-section { text-align: center; padding: 40px 20px; background: #050505; }
+        .footer-section a { color: #f1c40f; text-decoration: none; font-weight: bold; display: block; margin-top: 10px; }
     </style>
 </head>
 <body>
+    <header class="hero">
+        <img src="https://i.ibb.co/mFCRrm6s/logo.png" alt="Logo K&D" class="logo">
+        <h1>K&D SERVIÇOS</h1>
+        <a href="https://wa.me/5515981596886" class="btn-social">WhatsApp</a>
+        <a href="https://instagram.com/kelvin_melo_oficial" class="btn-social btn-insta">Instagram @kelvin_melo_oficial</a>
+    </header>
 
-    <header><h1>K&D <span>SERVIÇOS</span></h1></header>
-
-    <section class="hero">
-        <h1>Excelência em <span>Instalações & Manutenções</span></h1>
-        <a href="https://wa.me/5515981596886" class="btn-social" style="background:var(--whatsapp-green)"><i class="fab fa-whatsapp"></i> WhatsApp</a>
-        <a href="https://instagram.com/kelvin_melo_oficial" class="btn-social" style="background:var(--instagram-pink)"><i class="fab fa-instagram"></i> Instagram</a>
-    </section>
-
-    <main class="portfolio-section">
+    <main>
+        <!-- Servicos Elétricos -->
         <div class="category-block">
-            <div class="category-header">Serviços Elétricos</div>
-            <p class="category-description">Desenvolvemos projetos e manutenções elétricas residenciais e comerciais seguindo rigorosamente as diretrizes de segurança da norma NBR 5410. Atuamos desde a montagem de quadros até o dimensionamento correto de fiação.</p>
+            <h3>Serviços Elétricos</h3>
+            <p class="category-description">Desenvolvemos projetos e manutenções elétricas seguindo a norma NBR 5410, garantindo segurança total em quadros e instalações.</p>
             <div class="image-grid">
-                <div class="grid-item"><img src="https://ibb.co/gM6D1DYr" alt="Elétrica 1"></div>
-                <div class="grid-item"><img src="https://ibb.co/Q7wdCD2h" alt="Elétrica 2"></div>
-                <div class="grid-item"><img src="https://ibb.co/XxkCDgXN" alt="Elétrica 3"></div>
-                <div class="grid-item"><img src="https://ibb.co/M3w2dGP" alt="Elétrica 4"></div>
-                <div class="grid-item"><img src="https://ibb.co/3yKnspt1" alt="Elétrica 5"></div>
-                <div class="grid-item"><img src="https://ibb.co/CrhB0fd" alt="Elétrica 6"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/gM6D1DYr/ele01.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/Q7wdCD2h/ele02.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/XxkCDgXN/ele03.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/M3w2dGP/ele04.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/3yKnspt1/ele05.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/CrhB0fd/ele06.jpg"></div>
             </div>
         </div>
 
+        <!-- Ar Condicionado -->
         <div class="category-block">
-            <div class="category-header">Ar Condicionado</div>
-            <p class="category-description">Instalação e manutenção preventiva com foco em eficiência e qualidade do ar. Garantimos um ambiente climatizado com suporte técnico especializado.</p>
+            <h3>Ar Condicionado</h3>
+            <p class="category-description">Instalação e manutenção preventiva focada em eficiência energética e qualidade do ar para seu ambiente.</p>
             <div class="image-grid">
-                <div class="grid-item"><img src="https://ibb.co/JjzRpH5Z" alt="Ar 1"></div>
-                <div class="grid-item"><img src="https://ibb.co/7xscnqk1" alt="Ar 2"></div>
-                <div class="grid-item"><img src="https://ibb.co/d4PvBtSs" alt="Ar 3"></div>
-                <div class="grid-item"><img src="https://ibb.co/SDgGxwrS" alt="Ar 4"></div>
-                <div class="grid-item"><img src="https://ibb.co/rfH7T7dX" alt="Ar 5"></div>
-                <div class="grid-item"><img src="https://ibb.co/cKDZf29D" alt="Ar 6"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/JjzRpH5Z/ar01.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/7xscnqk1/ar02.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/d4PvBtSs/ar03.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/SDgGxwrS/ar04.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/rfH7T7dX/ar05.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/cKDZf29D/ar06.jpg"></div>
+            </div>
+        </div>
+
+        <!-- Perfis de LED -->
+        <div class="category-block">
+            <h3>Perfis de LED</h3>
+            <p class="category-description">Iluminação moderna e personalizada. Criamos ambientes sofisticados com perfis de LED de alta qualidade e acabamento impecável.</p>
+            <div class="image-grid">
+                <div class="grid-item"><img src="https://i.ibb.co/whwtYkZf/led01.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/r2s9hcqr/led02.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/sdVtKkzF/led03.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/pvjSRMVK/led04.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/5hxRvQWL/led05.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/gZ0N42dd/led06.jpg"></div>
+            </div>
+        </div>
+
+        <!-- Câmeras -->
+        <div class="category-block">
+            <h3>Câmeras de Segurança</h3>
+            <p class="category-description">Sistemas de monitoramento completos. Protegemos seu patrimônio com instalação técnica de câmeras de alta definição.</p>
+            <div class="image-grid">
+                <div class="grid-item"><img src="https://i.ibb.co/MkF8J4mT/cam01.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/N2n3V3vF/cam02.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/7t8dWRcs/cam03.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/Mkn3C3ZG/cam04.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/qLv8Tzfx/cam06.jpg"></div>
+            </div>
+        </div>
+
+        <!-- Drywall -->
+        <div class="category-block">
+            <h3>Drywall</h3>
+            <p class="category-description">Soluções em drywall para divisórias, forros e sancas. Rapidez, limpeza e um acabamento profissional para qualquer projeto.</p>
+            <div class="image-grid">
+                <div class="grid-item"><img src="https://i.ibb.co/WvvH3m4Z/dry02.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/2GxVG0W/dry03.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/r21dnY1p/dry04.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/ycYyhQCV/dry05.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/99F2fwvL/dry06.jpg"></div>
+            </div>
+        </div>
+
+        <!-- Motores -->
+        <div class="category-block">
+            <h3>Instalação de Motores</h3>
+            <p class="category-description">Instalação e configuração precisa de motores para portões e sistemas automatizados, garantindo durabilidade e funcionamento suave.</p>
+            <div class="image-grid">
+                <div class="grid-item"><img src="https://i.ibb.co/tM47qgvZ/mot01.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/Xf7Qxx3G/mot02.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/wFd7DzZb/mot03.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/8L3j7TTm/mot04.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/RGkcNjp9/mot05.jpg"></div>
+                <div class="grid-item"><img src="https://i.ibb.co/s9w9mPXM/mot06.jpg"></div>
             </div>
         </div>
     </main>
 
-    <footer class="info-footer">
-        <p>Localização: Sorocaba e região | Funcionamento: 09:00 - 17:00</p>
-        <p>&copy; 2026 K&D Serviços e Manutenções. Todos os direitos reservados.</p>
+    <footer class="footer-section">
+        <p>Atendimento de segunda a sexta, das 8:00 às 17:00</p>
+        <a href="https://maps.app.goo.gl/ykpEnqhAANtAZpmc8" target="_blank">📍 Ver localização no Google Maps</a>
+        <p style="margin-top:20px; font-size: 0.8em; color: #666;">© 2026 K&D Serviços. Todos os direitos reservados.</p>
     </footer>
-
 </body>
-</html>
+                                           </html>
+                                           
