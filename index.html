@@ -1,148 +1,577 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <link rel="stylesheet" href="[https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css)">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K&D Serviços e Manutenções</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        /* O body mantém a imagem de ferramentas nas bordas */
-    body { 
-        background-image: url('https://i.ibb.co/JRNxBBfx/ferramentas.jpg'); 
-        background-size: cover; 
-        background-position: center; 
-        background-attachment: fixed; 
-        color: #fff; font-family: sans-serif; margin: 0; 
-    }
-
-    /* O container-wrapper agora permite que o fundo apareça no topo */
-    .container-wrapper { 
-        background: rgba(13, 13, 13, 0.7); /* Reduzi a opacidade de 0.9 para 0.7 */
-        min-height: 100vh; 
-        padding-bottom: 20px; 
-    }
-
-    /* O Hero fica transparente para mostrar o fundo */
-    .hero { 
-        text-align: center; 
-        padding: 60px 20px; 
-        background: rgba(0, 0, 0, 0.4); /* Fundo levemente escurecido apenas atrás dos botões */
-    }
+    <title>K&D Serviços e Manutenções | Especialistas em Instalações</title>
     
-    /* ... mantenha o restante do seu CSS igual ... */
+    <meta name="description" content="K&D Serviços e Manutenções: Especialistas em instalações elétricas, ar-condicionado, drywall e automação. Profissionalismo e garantia técnica.">
+    
+    <meta name="keywords" content="K&D Serviços, Manutenções, Instalações Elétricas, Ar-condicionado, Drywall, Kelvin Melo">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
+
+    
+    <style>
+        :root {
+            --bg-color: #0d0d0d;
+            --card-bg: rgba(22, 22, 22, 0.9);
+            --card-border: rgba(255, 204, 0, 0.15);
+            --text-color: #ffffff;
+            --text-muted: #aaaaaa;
+            --kd-yellow: #f1c40f;
+            --kd-yellow-hover: #f39c12;
+            --whatsapp-green: #25d366;
+            --whatsapp-hover: #20ba5a;
+            --instagram-pink: #e1306c;
+            --instagram-hover: #c13584;
+            --font-main: 'Inter', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-main);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+            background: linear-gradient(rgba(13, 13, 13, 0.92), rgba(13, 13, 13, 0.92)), 
+                        url('assets/fundo-ferramentas.jpg') no-repeat center center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        /* --- HEADER --- */
+        header {
+            background-color: #000000;
+            padding: 15px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 15px rgba(0,0,0,0.7);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            color: var(--text-color);
+        }
+
+        .logo img {
+            height: 48px;
+            width: auto;
+            object-fit: contain;
+            filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.8));
+        }
+
+        .logo span {
+            color: var(--kd-yellow);
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            position: relative;
+            background: transparent; 
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 85vh;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero-banner-circle {
+            width: 580px; 
+            height: 580px;
+            border-radius: 50%;
+            overflow: hidden; 
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.9);
+            border: 3px solid rgba(255, 204, 0, 0.25);
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.75)), 
+                        url('assets/banner-dewalt.jpg') no-repeat center center;
+            background-size: 105% 105%; 
+        }
+
+        .hero h1 {
+            font-size: 34px;
+            font-weight: 800;
+            line-height: 1.2;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            text-shadow: 0 3px 10px rgba(0,0,0,0.9);
+        }
+
+        .hero h1 span {
+            color: var(--kd-yellow);
+        }
+
+        .hero p {
+            font-size: 15px;
+            color: #e5e5e5;
+            margin-bottom: 25px;
+            max-width: 480px;
+            text-shadow: 0 2px 8px rgba(0,0,0,0.9);
+            font-weight: 500;
+        }
+
+        /* Container de botões empilhados */
+        .hero-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            width: 100%;
+            max-width: 340px;
+        }
+
+        .btn-social {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            color: #ffffff;
+            text-decoration: none;
+            padding: 14px 24px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+
+        /* Estilo específico do WhatsApp */
+        .btn-whatsapp {
+            background-color: var(--whatsapp-green);
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+        }
+
+        .btn-whatsapp:hover {
+            background-color: var(--whatsapp-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+        }
+
+        /* Estilo específico do Instagram */
+        .btn-instagram {
+            background-color: var(--instagram-pink);
+            box-shadow: 0 4px 15px rgba(225, 48, 108, 0.3);
+        }
+
+        .btn-instagram:hover {
+            background-color: var(--instagram-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(225, 48, 108, 0.5);
+        }
+
+        /* --- SECÇÃO DE PORTFÓLIO --- */
+        .portfolio-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+            letter-spacing: 1px;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--kd-yellow);
+            margin: 14px auto 0 auto;
+            border-radius: 2px;
+        }
+
+        .category-block {
+            background-color: var(--card-bg);
+            border-radius: 14px;
+            padding: 40px;
+            margin-bottom: 50px;
+            border: 1px solid var(--card-border);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            box-shadow: 0 12px 40px rgba(0,0,0,0.5);
+        }
+
+        .category-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 22px;
+            font-weight: 800;
+            color: var(--kd-yellow);
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            border-left: 5px solid var(--kd-yellow);
+            padding-left: 15px;
+            letter-spacing: 0.5px;
+        }
+
+        .category-description {
+            font-size: 15px;
+            color: #dddddd;
+            margin-bottom: 30px;
+            line-height: 1.7;
+            max-width: 1000px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            padding-bottom: 20px;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 16px;
+        }
+
+        .grid-item {
+            position: relative;
+            border-radius: 10px;
+            overflow: hidden;
+            aspect-ratio: 1 / 1;
+            background-color: #151515;
+            border: 1px solid rgba(255,255,255,0.06);
+            cursor: pointer;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .grid-item::after {
+            content: '\f065'; 
+            font-family: 'Font Awesome 6 Free';
+            font-weight: 900;
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--kd-yellow);
+            font-size: 20px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .grid-item:hover::after {
+            opacity: 1;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.4s ease;
+        }
+
+        .grid-item:hover img {
+            transform: scale(1.08);
+        }
+
+        /* --- LIGHTBOX MODAL --- */
+        .lightbox-modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0;
+            width: 100%; height: 100%;
+            background-color: rgba(0, 0, 0, 0.95);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            padding: 20px;
+        }
+
+        .lightbox-modal.active {
+            display: flex;
+            opacity: 1;
+        }
+
+        .lightbox-content {
+            max-width: 90%;
+            max-height: 85vh;
+            border-radius: 8px;
+            box-shadow: 0 0 30px rgba(255, 204, 0, 0.2);
+            border: 2px solid rgba(255, 204, 0, 0.3);
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+
+        .lightbox-modal.active .lightbox-content {
+            transform: scale(1);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 25px; right: 30px;
+            color: #ffffff;
+            font-size: 35px;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .lightbox-close:hover {
+            color: var(--kd-yellow);
+        }
+
+        /* --- RODAPÉ --- */
+        footer {
+            background-color: #050505;
+            text-align: center;
+            padding: 25px 20px;
+            color: var(--text-muted);
+            font-size: 14px;
+            border-top: 1px solid #1a1a1a;
+        }
+
+        footer p span {
+            color: var(--kd-yellow);
+        }
+
+        /* --- RESPONSIVIDADE --- */
+        @media (max-width: 1024px) {
+            .image-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-banner-circle {
+                width: 100%;
+                height: auto;
+                aspect-ratio: auto;
+                border-radius: 20px;
+                padding: 40px 20px;
+                background-size: cover;
+            }
+            .hero h1 {
+                font-size: 26px;
+            }
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 12px;
+            }
+            .category-block {
+                padding: 25px 20px;
+            }
+        }
     </style>
-</head>
+</>
 <body>
-<div class="container-wrapper">
-    <header class="hero">
-        <img src="https://i.ibb.co/mFCRrm6s/logo.png" alt="Logo K&D" class="logo">
-        <h1>K&D SERVIÇOS</h1>
-        <a href="https://wa.me/5515981596886" class="btn-social">WhatsApp</a>
-        <a href="https://instagram.com/kelvin_melo_oficial" class="btn-social btn-insta">Instagram @kelvin_melo_oficial</a>
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/emblema-kd.png" alt="Emblema K&D">
+                K&D <span>SERVIÇOS</span>
+            </div>
+        </div>
     </header>
 
-    <main>
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-banner-circle">
+                <h1>Excelência em<br><span>Instalações & Manutenções</span></h1>
+                <p>Trabalho limpo, profissional e com garantia técnica para valorizar e proteger o seu imóvel.</p>
+                
+                <div class="hero-buttons">
+                    <a href="https://wa.me/5515981596886" class="btn-social btn-whatsapp" target="_blank">
+                        <i class="fab fa-whatsapp"></i> WhatsApp
+                    </a>
+                    <a href="https://instagram.com/kelvin_melo_oficial" class="btn-social btn-instagram" target="_blank">
+                        <i class="fab fa-instagram"></i> Siga no Instagram
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <main class="portfolio-section">
+        <h2 class="section-title">Nosso Portfólio de Serviços</h2>
+
         <div class="category-block">
-    <div class="category-header">
-        <i class="fas fa-bolt category-icon"></i> <!-- Ícone -->
-        <h3>Serviços Elétricos</h3>
-    </div>
-    <p class="category-description">Desenvolvemos projetos e manutenções elétricas seguindo a norma NBR 5410, garantindo segurança total em quadros e instalações.</p>
-    <div class="image-grid">
-                <div class="grid-item"><img src="https://i.ibb.co/gM6D1DYr/ele01.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/Q7wdCD2h/ele02.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/XxkCDgXN/ele03.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/M3w2dGP/ele04.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/3yKnspt1/ele05.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/CrhB0fd/ele06.jpg"></div>
+            <div class="category-header">
+                <i class="fas fa-bolt"></i> Serviços Elétricos
+            </div>
+            <p class="category-description">
+                Desenvolvemos projetos e manutenções elétricas residenciais e comerciais seguindo rigorosamente as diretrizes de segurança da norma NBR 5410. Atuamos desde a montagem e organização estruturada de quadros de distribuição (disjuntores e DRs) até o dimensionamento correto de fiação, troca de tomadas, interruptores e infraestrutura em geral. Garantimos uma rede elétrica estável, segura e otimizada para evitar sobrecargas e desperdício de energia.
+            </p>
+            <div class="image-grid">
+                <div class="grid-item"><img src="assets/servicoeletrico_01.jpg" alt="Instalação e Medição Elétrica"></div>
+                <div class="grid-item"><img src="assets/servicoeletrico_02.jpg" alt="Manutenção de Quadro de Distribuição"></div>
+                <div class="grid-item"><img src="assets/servicoeletrico_03.jpg" alt="Infraestrutura e Fiação Embutida"></div>
+                <div class="grid-item"><img src="assets/servicoeletrico_04.jpg" alt="Montagem de Disjuntores e DPS"></div>
+                <div class="grid-item"><img src="assets/servicoeletrico_05.jpg" alt="Revisão de Circuitos Residenciais"></div>
+                <div class="grid-item"><img src="assets/servicoeletrico_06.jpg" alt="Acabamento e Testes Técnicos"></div>
             </div>
         </div>
 
         <div class="category-block">
-    <div class="category-header">
-        <i class="fas fa-snowflake category-icon"></i>
-        <h3>Ar Condicionado</h3>
-    </div>
-    <p class="category-description">Instalação e manutenção preventiva focada em eficiência energética e qualidade do ar para seu ambiente.</p>
-    <div class="image-grid">
-                <div class="grid-item"><img src="https://i.ibb.co/JjzRpH5Z/ar01.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/7xscnqk1/ar02.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/d4PvBtSs/ar03.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/SDgGxwrS/ar04.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/rfH7T7dX/ar05.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/cKDZf29D/ar06.jpg"></div>
+            <div class="category-header">
+                <i class="fas fa-lightbulb"></i> Perfis de LED & Iluminação Linear
+            </div>
+            <p class="category-description">
+                A iluminação em perfil de LED representa o ápice do design de interiores moderno, unindo sofisticação, minimalismo e alta eficiência energética. Realizamos cortes de alta precisão em superfícies e embutidos, aplicando fitas de LED de excelente calibração cromática e fontes chaveadas devidamente dimensionadas e ocultas. Seja para sancas, marcenarias, tetos ou paredes, entregamos um efeito de luz difusa impecável e homogêneo.
+            </p>
+            <div class="image-grid">
+                <div class="grid-item"><img src="assets/perfisdeled_01.jpg" alt="Instalação de Perfil de LED embutido"></div>
+                <div class="grid-item"><img src="assets/perfisdeled_02.jpg" alt="Alinhamento e Acabamento de Iluminação Linear"></div>
+                <div class="grid-item"><img src="assets/perfisdeled_03.jpg" alt="Design de Luz com Perfis Modernos"></div>
+                <div class="grid-item"><img src="assets/perfisdeled_04.jpg" alt="Iluminação de Destaque Residencial"></div>
+                <div class="grid-item"><img src="assets/perfisdeled_05.jpg" alt="Fixação Técnica e Conexões de Fitas LED"></div>
+                <div class="grid-item"><img src="assets/perfisdeled_06.jpg" alt="Resultado Final de Iluminação Premium"></div>
             </div>
         </div>
 
         <div class="category-block">
-    <div class="category-header">
-        <i class="fas fa-lightbulb category-icon"></i>
-        <h3>Perfis de LED</h3>
-    </div>
-    <p class="category-description">Iluminação moderna e personalizada. Criamos ambientes sofisticados com perfis de LED de alta qualidade e acabamento impecável.</p>
-    <div class="image-grid">
-                <div class="grid-item"><img src="https://i.ibb.co/whwtYkZf/led01.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/r2s9hcqr/led02.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/sdVtKkzF/led03.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/pvjSRMVK/led04.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/5hxRvQWL/led05.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/gZ0N42dd/led06.jpg"></div>
+            <div class="category-header">
+                <i class="fas fa-hammer"></i> Forro Drywall & Cortinas de Gesso
+            </div>
+            <p class="category-description">
+                Trabalhamos com sistemas de drywall (gesso acartonado) estruturados com perfis de aço galvanizado de altíssima qualidade. Executamos rebaixamentos de teto, cortineiros iluminados, sancas e divisórias com excelente isolamento acústico e superfícies totalmente planas. Nossa equipe foca no tratamento minucioso de juntas com fitas e massas específicas, garantindo uma pintura posterior perfeita e livre de trincas ou imperfeições.
+            </p>
+            <div class="image-grid">
+                <div class="grid-item"><img src="assets/drywall_01.jpg" alt="Estruturação de Perfis de Aço Galvanizado"></div>
+                <div class="grid-item"><img src="assets/drywall_02.jpg" alt="Fixação de Placas de Gesso Acartonado"></div>
+                <div class="grid-item"><img src="assets/drywall_03.jpg" alt="Tratamento de Juntas e Amaciamento"></div>
+                <div class="grid-item"><img src="assets/drywall_04.jpg" alt="Alinhamento de Teto em Drywall"></div>
+                <div class="grid-item"><img src="assets/drywall_05.jpg" alt="Execução de Sancas e Cortineiros"></div>
+                <div class="grid-item"><img src="assets/drywall_06.jpg" alt="Forro de Drywall Finalizado e Pronto"></div>
             </div>
         </div>
 
         <div class="category-block">
-    <div class="category-header">
-        <i class="fas fa-video category-icon"></i>
-        <h3>Câmeras de Segurança</h3>
-    </div>
-    <p class="category-description">Sistemas de monitoramento completos. Protegemos seu patrimônio com instalação técnica de câmeras de alta definição.</p>
-    <div class="image-grid">
-                <div class="grid-item"><img src="https://i.ibb.co/MkF8J4mT/cam01.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/N2n3V3vF/cam02.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/7t8dWRcs/cam03.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/Mkn3C3ZG/cam04.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/qLv8Tzfx/cam06.jpg"></div>
+            <div class="category-header">
+                <i class="fas fa-door-open"></i> Instalação de Motor de Portão & Automatização
             </div>
-        </div>
-
-        <div class="category-block">
-    <div class="category-header">
-        <i class="fas fa-hammer category-icon"></i>
-        <h3>Drywall</h3>
-    </div>
-    <p class="category-description">Soluções em drywall para divisórias, forros e sancas. Rapidez, limpeza e um acabamento profissional para qualquer projeto.</p>
-    <div class="image-grid">
-                <div class="grid-item"><img src="https://i.ibb.co/WvvH3m4Z/dry02.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/2GxVG0W/dry03.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/r21dnY1p/dry04.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/ycYyhQCV/dry05.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/99F2fwvL/dry06.jpg"></div>
-            </div>
-        </div>
-
-        <div class="category-block">
-    <div class="category-header">
-        <i class="fas fa-door-open category-icon"></i>
-        <h3>Instalação de Motores</h3>
-    </div>
-    <p class="category-description">Instalação e configuração precisa de motores para portões e sistemas automatizados, garantindo durabilidade e funcionamento suave.</p>
-    <div class="image-grid">
-                <div class="grid-item"><img src="https://i.ibb.co/tM47qgvZ/mot01.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/Xf7Qxx3G/mot02.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/wFd7DzZb/mot03.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/8L3j7TTm/mot04.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/RGkcNjp9/mot05.jpg"></div>
-                <div class="grid-item"><img src="https://i.ibb.co/s9w9mPXM/mot06.jpg"></div>
+            <p class="category-description">
+                Soluções completas em automatização para portões deslizantes, basculantes ou pivotantes. Realizamos a fixação mecânica robusta da base, alinhamento milimétrico das cremalheiras para evitar desgaste prematuro das engrenagens, e a configuração precisa da placa eletrônica (fim de curso, embreagem anti-esmagamento e cadastro de controles). Segurança extra, conforto e agilidade para o acesso ao seu patrimônio.
+            </p>
+            <div class="image-grid">
+                <div class="grid-item"><img src="assets/instalacaodemotordeportao_01.jpg" alt="Fixação da Base do Motor Eletrônico"></div>
+                <div class="grid-item"><img src="assets/instalacaodemotordeportao_02.jpg" alt="Alinhamento e Fixação de Cremalheiras"></div>
+                <div class="grid-item"><img src="assets/instalacaodemotordeportao_03.jpg" alt="Configuração de Placa Comando e Fins de Curso"></div>
+                <div class="grid-item"><img src="assets/instalacaodemotordeportao_04.jpg" alt="Conexão Elétrica de Alimentação do Motor"></div>
+                <div class="grid-item"><img src="assets/instalacaodemotordeportao_05.jpg" alt="Testes de Abertura e Fechamento Automatizado"></div>
+                <div class="grid-item"><img src="assets/instalacaodemotordeportao_06.jpg" alt="Sistema de Automatização Concluído"></div>
             </div>
         </div>
     </main>
 
-    <footer class="footer-section">
-        <p>Atendimento de segunda a sexta, das 8:00 às 17:00</p>
-        <a href="https://maps.app.goo.gl/ykpEnqhAANtAZpmc8" target="_blank">📍 Ver localização no Google Maps</a>
-        <p style="margin-top:20px; font-size: 0.8em; color: #666;">© 2026 K&D Serviços. Todos os direitos reservados.</p>
-    </footer>
-</div>
+    <div class="lightbox-modal" id="lightboxModal">
+        <span class="lightbox-close" id="lightboxClose">&times;</span>
+        <img src="" alt="Imagem Ampliada" class="lightbox-content" id="lightboxImg">
+    </div>
+
+       <script>
+        const modal = document.getElementById('lightboxModal');
+        const modalImg = document.getElementById('lightboxImg');
+        const closeBtn = document.getElementById('lightboxClose');
+        const gridItems = document.querySelectorAll('.grid-item img');
+
+        gridItems.forEach(img => {
+            img.parentElement.addEventListener('click', () => {
+                modal.classList.add('active');
+                modalImg.src = img.src;
+                modalImg.alt = img.alt;
+            });
+        });
+
+        closeBtn.addEventListener('click', () => {
+            modal.classList.remove('active');
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+            }
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                modal.classList.remove('active');
+            }
+        });
+    </script>
+
 </body>
+  
 </html>
+    <!-- SEÇÃO AR-CONDICIONADO -->
+    <section id="ar-condicionado" style="padding: 40px 20px; background-color: #1a1a1a;">
+        <h2 style="text-align: center; color: var(--kd-yellow); margin-bottom: 20px;">Climatização e Ar-Condicionado</h2>
+        <p style="text-align: center; max-width: 600px; margin: 0 auto 30px auto; color: #ccc;">
+            Oferecemos serviços especializados de instalação, manutenção preventiva e higienização de ar-condicionado para garantir o seu conforto e bem-estar.
+        </p>
+
+        <!-- Galeria de Imagens -->
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 15px; max-width: 1000px; margin: 0 auto;">
+            <img src="assets/ar-condicionado_01.jpg" alt="Serviço de Ar-condicionado 1" style="width: 100%; border-radius: 8px;">
+            <img src="assets/ar-condicionado_02.jpg" alt="Serviço de Ar-condicionado 2" style="width: 100%; border-radius: 8px;">
+            <img src="assets/ar-condicionado_03.jpg" alt="Serviço de Ar-condicionado 3" style="width: 100%; border-radius: 8px;">
+            <img src="assets/ar-condicionado_04.jpg" alt="Serviço de Ar-condicionado 4" style="width: 100%; border-radius: 8px;">
+            <img src="assets/ar-condicionado_05.jpg" alt="Serviço de Ar-condicionado 5" style="width: 100%; border-radius: 8px;">
+            <img src="assets/ar-condicionado_06.jpg" alt="Serviço de Ar-condicionado 6" style="width: 100%; border-radius: 8px;">
+        </div>
+    </section>
+    <!-- SEÇÃO DE LOCALIZAÇÃO -->
+    <section style="padding: 40px 20px; text-align: center; background-color: #0d0d0d;">
+        <h2 style="color: var(--kd-yellow); margin-bottom: 20px;">Onde estamos</h2>
+        <p style="color: #ccc; margin-bottom: 20px;">Clique abaixo para traçar a rota até nós:</p>
+        
+        <a href="https://goo.gl/maps/SHViCWaFG6EkE1su9" target="_blank" 
+           style="display: inline-flex; align-items: center; justify-content: center; gap: 10px; 
+                  background-color: #4285F4; color: white; padding: 15px 30px; border-radius: 50px; 
+                  text-decoration: none; font-weight: bold; font-size: 16px; transition: 0.3s;">
+            <i class="fas fa-map-marked-alt"></i> Traçar Rota no Mapa
+        </a>
+    </section>
+    <section style="padding: 20px; text-align: center; color: #ffffff; background-color: #050505; border-top: 1px solid #333;">
+        <h3 style="color: var(--kd-yellow); margin-bottom: 10px;">Horário de Funcionamento</h3>
+        <p style="margin: 0; font-size: 16px;">
+            <i class="far fa-clock"></i> Segunda a Sexta: 08:00 às 17:00
+        </p>
+    </section>
+
+
+<footer>
+        <p>&copy; 2026 <span>K&D Serviços</span>. Todos os direitos reservados.</p>
+</footer>
