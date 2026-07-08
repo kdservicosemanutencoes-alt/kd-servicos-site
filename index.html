@@ -6,14 +6,21 @@
     <title>K&D Serviços e Manutenções</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { background: #0d0d0d; color: #fff; font-family: sans-serif; margin: 0; }
+        body { 
+            background-image: url('https://i.ibb.co/JRNxBBfx/ferramentas.jpg'); 
+            background-size: cover; 
+            background-position: center; 
+            background-attachment: fixed; 
+            color: #fff; font-family: sans-serif; margin: 0; 
+        }
+        .container-wrapper { background: rgba(13, 13, 13, 0.9); min-height: 100vh; padding-bottom: 20px; }
         .hero { 
             text-align: center; padding: 60px 20px; 
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://i.ibb.co/VWmZkFFM/banner.jpg'); 
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://i.ibb.co/VWmZkFFM/banner.jpg'); 
             background-size: cover; background-position: center; 
         }
         .logo { width: 150px; border-radius: 50%; border: 3px solid #f1c40f; margin-bottom: 15px; }
-        .category-block { background: #161616; margin: 20px; padding: 20px; border-radius: 10px; }
+        .category-block { background: #161616; margin: 20px; padding: 20px; border-radius: 10px; border: 1px solid #333; }
         .category-description { font-size: 14px; color: #ccc; margin-bottom: 15px; }
         .image-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
         .grid-item img { width: 100%; height: 150px; object-fit: cover; border-radius: 5px; }
@@ -24,6 +31,7 @@
     </style>
 </head>
 <body>
+<div class="container-wrapper">
     <header class="hero">
         <img src="https://i.ibb.co/mFCRrm6s/logo.png" alt="Logo K&D" class="logo">
         <h1>K&D SERVIÇOS</h1>
@@ -32,7 +40,6 @@
     </header>
 
     <main>
-        <!-- Servicos Elétricos -->
         <div class="category-block">
             <h3>Serviços Elétricos</h3>
             <p class="category-description">Desenvolvemos projetos e manutenções elétricas seguindo a norma NBR 5410, garantindo segurança total em quadros e instalações.</p>
@@ -46,7 +53,6 @@
             </div>
         </div>
 
-        <!-- Ar Condicionado -->
         <div class="category-block">
             <h3>Ar Condicionado</h3>
             <p class="category-description">Instalação e manutenção preventiva focada em eficiência energética e qualidade do ar para seu ambiente.</p>
@@ -60,7 +66,6 @@
             </div>
         </div>
 
-        <!-- Perfis de LED -->
         <div class="category-block">
             <h3>Perfis de LED</h3>
             <p class="category-description">Iluminação moderna e personalizada. Criamos ambientes sofisticados com perfis de LED de alta qualidade e acabamento impecável.</p>
@@ -74,7 +79,6 @@
             </div>
         </div>
 
-        <!-- Câmeras -->
         <div class="category-block">
             <h3>Câmeras de Segurança</h3>
             <p class="category-description">Sistemas de monitoramento completos. Protegemos seu patrimônio com instalação técnica de câmeras de alta definição.</p>
@@ -87,7 +91,6 @@
             </div>
         </div>
 
-        <!-- Drywall -->
         <div class="category-block">
             <h3>Drywall</h3>
             <p class="category-description">Soluções em drywall para divisórias, forros e sancas. Rapidez, limpeza e um acabamento profissional para qualquer projeto.</p>
@@ -100,7 +103,6 @@
             </div>
         </div>
 
-        <!-- Motores -->
         <div class="category-block">
             <h3>Instalação de Motores</h3>
             <p class="category-description">Instalação e configuração precisa de motores para portões e sistemas automatizados, garantindo durabilidade e funcionamento suave.</p>
@@ -120,6 +122,6 @@
         <a href="https://maps.app.goo.gl/ykpEnqhAANtAZpmc8" target="_blank">📍 Ver localização no Google Maps</a>
         <p style="margin-top:20px; font-size: 0.8em; color: #666;">© 2026 K&D Serviços. Todos os direitos reservados.</p>
     </footer>
+</div>
 </body>
-                                           </html>
-                                           
+</html>
